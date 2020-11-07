@@ -13,27 +13,29 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="lists-container">
-        <AddTodo
-          userInput={userInput}
-          setUserInput={setUserInput}
-          todosToDo={todosToDo}
-          setTodoToDo={setTodosToDo}
-        />
-        <List
-          categ="Scheduled"
-          todosToDo={todosToDo}
-          todosDone={todosDone}
-          setTodoToDo={setTodosToDo}
-          setTodoDone={setTodosDone}
-        />
-        <List
-          categ="Done"
-          todosDone={todosDone}
-          setTodoToDo={setTodosToDo}
-          setTodoDone={setTodosDone}
-        />
-        <Footer />
+      <div className="main">
+        <div className="lists-container">
+          <AddTodo
+            userInput={userInput}
+            setUserInput={setUserInput}
+            todosToDo={todosToDo}
+            setTodoToDo={setTodosToDo}
+          />
+          <List
+            categ="Scheduled"
+            todosToDo={todosToDo}
+            todosDone={todosDone}
+            setTodoToDo={setTodosToDo}
+            setTodoDone={setTodosDone}
+          />
+          <List
+            categ="Done"
+            todosDone={todosDone}
+            setTodoToDo={setTodosToDo}
+            setTodoDone={setTodosDone}
+          />
+          <Footer />
+        </div>
       </div>
     </div>
   );
