@@ -1,1 +1,98 @@
 /* Other rules */
+.lists-container {
+  box-sizing: border-box;
+  padding: 0 25px 100px 25px;
+  max-width: 728px;
+  margin: 50px calc((100% - 678px) / 2) 0 calc((100% - 678px) / 2);
+  border: 1px solid lightgray;
+  position: relative;
+}
+/* HEADER */
+.header {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.container {
+  width: 33%;
+  display: flex;
+}
+
+.container > i {
+  color: #5d47d2;
+  font-size: 44px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  flex: 3;
+  min-width: 206px;
+}
+/* HEADER */
+
+/* ADDTODO */
+.addTodo {
+  display: flex;
+  align-items: center;
+}
+.addTodo > input {
+  box-sizing: border-box;
+  border: 2px solid black;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 50px;
+  outline: none;
+}
+.addTodo > button {
+  box-sizing: border-box;
+  background-color: #5d47d2;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  color: white;
+  margin-top: 20px;
+  height: 40px;
+}
+/* ADDTODO */
+
+/* TODOS */
+.todos {
+  box-sizing: border-box;
+  min-height: 60px;
+  font-size: 20px;
+  border-bottom: 0.5px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todos input:first-child {
+  margin-right: 20px;
+}
+.dones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dones p {
+  min-height: 30px;
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: center;
+}
+.checked {
+  text-decoration: line-through;
+}
+/* TODOS */
