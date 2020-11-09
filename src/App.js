@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import List from './components/List';
+import Main from './components/Main';
 import AddTodo from './components/AddTodo';
 import Footer from './components/Footer';
 import './App.css';
@@ -21,19 +21,14 @@ function App() {
             todosToDo={todosToDo}
             setTodoToDo={setTodosToDo}
           />
-          <List
-            categ="Scheduled"
+
+          <Main
             todosToDo={todosToDo}
             todosDone={todosDone}
-            setTodoToDo={setTodosToDo}
-            setTodoDone={setTodosDone}
+            setTodosToDo={setTodosToDo}
+            setTodosDone={setTodosDone}
           />
-          <List
-            categ="Done"
-            todosDone={todosDone}
-            setTodoToDo={setTodosToDo}
-            setTodoDone={setTodosDone}
-          />
+
           <Footer />
         </div>
       </div>

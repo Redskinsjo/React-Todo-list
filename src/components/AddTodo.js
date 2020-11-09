@@ -6,7 +6,6 @@ const AddTodo = ({ userInput, setUserInput, todosToDo, setTodoToDo }) => {
     if (userInput) {
       const newObj = [...todosToDo];
       newObj.push(userInput);
-      // console.log(newObj);
       setTodoToDo(newObj);
       setUserInput('');
     }
